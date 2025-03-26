@@ -23,4 +23,14 @@
             </Hash>
         </Value>
     </Setting>
+        <Setting Name="DefaultColumnsScreens###CustomerTicketSearch" Required="0" Valid="1">
+            <Description Translatable="1">This configuration adds CustomerTicketSearch to the screens to enable or disable default columns for.</Description>
+            <Navigation>Frontend::Base::DynamicFieldScreens</Navigation>
+            <Value>
+                <Hash>
+                    <!-- DefaultColumns -->
+                    <Item Key="Ticket::Frontend::CustomerTicketSearch###SearchOverviewDynamicField">CustomerTicketSearch</Item>
+                </Hash>
+            </Value>
+        </Setting>
 </otobo_config>
