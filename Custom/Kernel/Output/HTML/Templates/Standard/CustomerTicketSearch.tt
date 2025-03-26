@@ -17,8 +17,15 @@
 # --
 
 [% RenderBlockStart("Search") %]
-<div id="MainBox" class="Search ARIARoleMain">
-    <div class="Content">
+# Rother OSS / CustomerTicketSearch
+# <div id="MainBox" class="Search ARIARoleMain">
+#     <div class="Content">
+<div id="oooContent" class="ARIARoleMain Search">
+    <div id="oooHeader">
+        <h1>[% Translate("Search for a Ticket") | html %]</h1>
+    </div>
+    <div id="oooMainBox" class="Content">
+# EO CustomerTicketSearch
         <form action="[% Env("CGIHandle") %]" method="get">
             <input type="hidden" name="Action" value="[% Env("Action") %]"/>
             <input type="hidden" name="Subaction" value="LoadProfile"/>
@@ -36,9 +43,15 @@
             </div>
         </form>
 
-        <form action="[% Env("CGIHandle") %]" method="post" name="compose">
+# Rother OSS / CustomerTicketSearch
+#         <form action="[% Env("CGIHandle") %]" method="post" name="compose">
+        <form action="[% Env("CGIHandle") %]" method="post" name="compose" enctype="multipart/form-data" class="Validate PreventMultipleSubmits">
+# EO CustomerTicketSearch
             <input type="hidden" name="Action" value="[% Env("Action") %]"/>
             <input type="hidden" name="Subaction" value="Search"/>
+# Rother OSS / CustomerTicketSearch
+            <input type="hidden" name="FormID" value="[% Data.FormID | html %]" />
+# EO CustomerTicketSearch
             <fieldset>
                 <h2>[% Config("Ticket::Hook") %]</h2>
                 <div>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otobo_package version="1.0">
     <Name>CustomerTicketSearch</Name>
-    <Version>11.0.0</Version>
+    <Version>0.0.0</Version>
     <Framework>11.0.x</Framework>
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.io/</URL>
@@ -10,5 +10,6 @@
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/CustomerTicketSearch.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketSearch.tt" />
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketSearchResultShort.tt" />
     </Filelist>
 </otobo_package>
