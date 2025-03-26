@@ -13,5 +13,6 @@
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketSearchResultShort.tt" />
         <File Permission="660" Location="Kernel/Config/Files/XML/CustomerTicketSearch.xml" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.TicketSearch.css" />
+        <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.Widget.css" />
     </Filelist>
 </otobo_package>
