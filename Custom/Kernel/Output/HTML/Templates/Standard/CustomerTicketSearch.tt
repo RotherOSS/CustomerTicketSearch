@@ -193,10 +193,17 @@
                             </div>
                         </fieldset>
                     </div>
+                    <div class="oooSection">
+                        <h3>[% Translate("Output to") | html %]</h3>
+                        <fieldset>
+                            <div class="Clear"></div>
+                            <div class="Row">
+                                [% Data.ResultFormStrg %]
+                            </div>
+                        </fieldset>
+                    </div>
                     <div id="BottomActionRow" class="ActionRow Row">
                         <button id="Submit" type="submit" value="[% Translate("Search") | html %]">[% Translate("Search") | html %]</button>
-                        <span>[% Translate("Output to") | html %]</span>
-                        [% Data.ResultFormStrg %]
                     </div>
                 </form>
             </div>
