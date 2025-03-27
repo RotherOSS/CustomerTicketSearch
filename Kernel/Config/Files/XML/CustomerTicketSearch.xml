@@ -18,6 +18,7 @@
                         <Item>Core.Agent.TableFilters.js</Item>
                         <Item>Core.Agent.Overview.js</Item>
                         <Item>Core.Agent.TicketSplit.js</Item>
+                        <Item>Core.Agent.DynamicFieldReferenceSearch.js</Item>
                     </Array>
                 </Item>
             </Hash>
