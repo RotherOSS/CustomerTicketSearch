@@ -14,13 +14,12 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
 @media only screen and (max-width: 767px) {
-    
+
     #oooHeader {
+        height: 128px;
         padding: 0px 16px 24px 16px;
         border-radius: 20px 20px 0px 0px;
         border-bottom: 0.6px solid #e5e5eb;
-        height: 121px;
-
         overflow: hidden;
     }
 
@@ -32,12 +31,38 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 @media only screen and (min-width: 768px) {
-    
+
     #oooHeader {
         height: 145px;
         position: sticky;
         top: 0;
         border-bottom: 1.2px solid #e5e5eb;
+    }
+
+    .Row_DynamicField {
+        width: 66%;
+        margin-left: 17%;
+        grid-row-gap: 16px;
+        grid-column-gap: 40px;
+    }
+
+    .Row > div.Field,
+    .Row > div.InputField_Container,
+    .Row > select,
+    #cke_RichText,
+    #RichText {
+        width: 66% !important;
+        margin-left: 17%;
+    }
+
+    .Row > input[type="text"] {
+        width: calc( 66% - 32px ) !important;
+        margin-left: 17%;
+    }
+
+    .Row > label,
+    .RichTextHolder > label {
+        left: calc( -66% + 24px );
     }
 }
 
@@ -50,27 +75,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     background-color: var(--colBGLight);
 }
 
-.Box {
-    position: relative;
-    border-radius: 20px;
-    box-shadow: 0 12px 16px 0 rgba(4, 0, 71, 0.16);
-    box-shadow: 0 12px 16px 0 var(--colShadowDark);
-    background-color: #ffffff;
-    margin-bottom: 24px;
-    margin-top: 8px;
-    padding: 24px 40px;
-    overflow: hidden;
-}
-
-.Box button,
-.Box .Row {
-    margin-top: 24px;
-}
-
-.Box .Row {
-    position: relative;
-}
-
+/*
 .Row > input {
     display: inline-block;
     height: 56px;
@@ -109,15 +114,29 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     color: #001bff;
     color: var(--colMainLight);
 }
+*/
 
-.Row > label {
-    position: absolute;
-    top: 18px; /* (56px-20px)/2 */
-    left: 24px;
-    z-index: 1;
+#BottomActionRow {
+    text-align: center;
+    margin-top: 80px;
 }
 
-.Row:hover > label,
-.Row > label.oooFocus {
-    top: -8px;
+.oooTicketSearch > div {
+    display: block;
+    width: calc( 100% - 80px );
+    height: auto;
+    margin-top: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 15px;
+    box-shadow: 0 1px 4px 0 rgba(4, 0, 71, 0.16);
+    box-shadow: 0 1px 4px 0 var(--colShadowDark);
+    background-color: #ffffff;
+}
+
+.oooTicketSearch .oooWidget {
+    position: initial;
+    max-width: none;
 }
