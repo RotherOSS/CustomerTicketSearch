@@ -46,15 +46,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
         grid-column-gap: 40px;
     }
 
-    .Row > div.Field,
-    .Row > div.InputField_Container,
-    .Row > select,
-    #cke_RichText,
-    #RichText {
-        width: 66% !important;
-        margin-left: 17%;
-    }
-
     .Row > input[type="text"] {
         width: calc( 66% - 32px ) !important;
         margin-left: 17%;
@@ -68,6 +59,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 #oooHeader {
     background-color: #ffffff;
+    display: grid;
+    align-content: center;
 }
 
 #oooCustomerNotifications {
@@ -75,8 +68,21 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     background-color: var(--colBGLight);
 }
 
-/*
-.Row > input {
+.Row {
+    display: block flex;
+}
+
+.Row > .FieldCell {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Row div.Field{
+    position: relative;
+    width: 100%;
+}
+
+.Row .Field > input {
     display: inline-block;
     height: 56px;
     font-size: 16px;
@@ -99,26 +105,119 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
         transition: border 0.2s ease;
 }
 
-.Row > input:hover,
-.Row > input.oooFull {
+.Row .Field > input:hover,
+.Row .Field > input.oooFull {
     border: solid 1px #7f809d;
     border: solid 1px var(--colTextLight);
     background-color: #fff;
 }
 
-.Row > input:focus,
-.Row > input.oooFull:focus {
+.Row .Field > input:focus,
+.Row .Field > input.oooFull:focus {
     border: solid 1px #001bff;
     border: solid 1px var(--colMainLight);
     background-color: #fff;
     color: #001bff;
     color: var(--colMainLight);
 }
-*/
+
+.FieldCell > label {
+    position: absolute;
+    left: 24px;
+    top: 28px; /* for hardcoded field height 56px */
+    margin-top: -0.5em;
+    z-index: 1;
+}
+
+.oooTicketSearch .Field.oooFull ~ label,
+.oooTicketSearch .Field ~ label.oooFocus,
+.oooTicketSearch .Field:hover:not([class*='RichTextField']) ~ label,
+.oooTicketSearch .Field.oooSelected ~ label {
+    top: 0;
+}
+
+/* fix for style bug in Core.InputFields.css */
+.oooTicketSearch .Field:hover:not([class*='RichTextField']) ~ label.oooFocus {
+    color: var(--colMainLight)
+}
+
+.oooTicketSearch .Field.TimeRestriction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    height: unset;
+    min-height: 56px;
+}
+
+.oooTicketSearch .Field.TimeRestriction > input {
+    width: fit-content;
+    height: fit-content;
+}
+
+.oooTicketSearch .Field.TimeRestriction.NoLabel ~ label,
+.oooTicketSearch .Field.TimeRestriction.NoLabel label {
+    display: none;
+}
+
+.oooTicketSearch .FieldCell > .Field.TimeRestriction ~ label {
+    position: absolute;
+    left: 24px;
+    top: 28px; /* for hardcoded field height 56px */
+    margin-top: -0.5em;
+    z-index: 1;
+    font-size: 16px;
+    background-color: unset;
+    color: #00023c;
+    color: var(--colTextDark);
+}
+
+.oooTicketSearch .Field.TimeRestriction p {
+    font-size: 16px;
+    color: #00023c;
+    color: var(--colTextDark);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 0px;
+}
+
+.oooTicketSearch .Field.TimeRestriction > * {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.oooTicketSearch .Field.TimeRestriction.NoLabel .oooDateContainer,
+.oooTicketSearch .FieldCell .Field.oooCheckboxContainer {
+    padding-left: 16px;
+}
+
+.oooTicketSearch .Field.oooCheckboxContainer input {
+    display: none;
+}
+
+.oooTicketSearch .oooWidget .oooSection > h3 {
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+.oooTicketSearch .oooSection > fieldset:first-of-type,
+.oooTicketSearch .oooSection > fieldset:first-of-type > .Row:first-of-type {
+    margin-top: 8px;
+}
+
+.oooTicketSearch .ActionRow {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
 
 #BottomActionRow {
     text-align: center;
-    margin-top: 80px;
+}
+
+.oooTicketSearch .ActionRow > * {
+    margin-right: 24px;
 }
 
 .oooTicketSearch > div {
@@ -136,7 +235,12 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     background-color: #ffffff;
 }
 
+.oooTicketSearch .oooWidget:last-of-type {
+    margin-bottom: 40px;
+}
+
 .oooTicketSearch .oooWidget {
     position: initial;
     max-width: none;
+    margin-top: 40px;
 }
