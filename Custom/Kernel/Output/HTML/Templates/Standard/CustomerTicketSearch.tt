@@ -75,6 +75,16 @@
                     <div class="oooSection">
                         <h3>[% Config("Ticket::Hook") %]</h3>
                         <fieldset>
+# Rother OSS / CustomerTicketSearch
+                            <div class="Row">
+                                <div class="FieldCell">
+                                    <div class="Field">
+                                        <input type="text" name="Fulltext" value="[% Data.Fulltext | html %]" />
+                                    </div>
+                                    <label for="Fulltext" id="LabelFulltext">[% Translate("Fulltext") | html %]:</label>
+                                </div>
+                            </div>
+# EO CustomerTicketSearch
                             <div class="Row">
                                 <div class="FieldCell">
                                     <div class="Field">
