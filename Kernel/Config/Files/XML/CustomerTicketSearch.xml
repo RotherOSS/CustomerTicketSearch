@@ -7,6 +7,8 @@
             <Hash>
                 <Item Key="CSS">
                     <Array>
+                        <Item>Core.TicketList.css</Item>
+                        <Item>Core.TicketOverview.css</Item>
                         <Item>Core.AllocationList.css</Item>
                         <Item>Core.TicketSearch.css</Item>
                         <Item>Core.Widget.css</Item>
@@ -19,6 +21,8 @@
                         <Item>Core.Agent.Overview.js</Item>
                         <Item>Core.Agent.TicketSplit.js</Item>
                         <Item>Core.Agent.DynamicFieldReferenceSearch.js</Item>
+                        <Item>Core.Customer.TicketList.js</Item>
+                        <Item>Core.Customer.Search.js</Item>
                     </Array>
                 </Item>
             </Hash>
