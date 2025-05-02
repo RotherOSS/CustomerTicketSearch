@@ -127,7 +127,7 @@ sub Run {
         KEY:
         for my $Key (
             sort keys %ArticleSearchableFields,
-            qw(TicketNumber ResultForm TimeSearchType StateType SearchInArchive
+            qw(Fulltext TicketNumber ResultForm TimeSearchType StateType SearchInArchive
             TicketCreateTimePointFormat TicketCreateTimePoint TicketCreateTimePointStart
             TicketCreateTimeStart TicketCreateTimeStartDay TicketCreateTimeStartMonth
             TicketCreateTimeStartYear TicketCreateTimeStop TicketCreateTimeStopDay
@@ -1088,8 +1088,8 @@ sub Run {
                     . ';';
 
                 # remember fulltext query
-                if ( defined $GetParam{Body} ) {
-                    $Link .= 'Body=' . $LayoutObject->Ascii2Html( Text => $GetParam{Body} ) . ';';
+                if ( defined $GetParam{Fulltext} ) {
+                    $Link .= 'Fulltext=' . $LayoutObject->Ascii2Html( Text => $GetParam{Fulltext} ) . ';';
                 }
 
                 # TODO didn't understand, need to investigate
@@ -1410,7 +1410,7 @@ sub Run {
                 %PageNav,
                 AccessKey      => $NewTicketAccessKey,
                 TicketListHTML => $TicketListHTML,
-                Fulltext       => $ParamObject->GetParam( Param => 'Body' ),
+                Fulltext       => $ParamObject->GetParam( Param => 'Fulltext' ),
             },
         );
 
