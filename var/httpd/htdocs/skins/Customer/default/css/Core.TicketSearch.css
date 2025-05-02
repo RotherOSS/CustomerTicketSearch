@@ -141,30 +141,33 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     color: var(--colMainLight)
 }
 
-.oooTicketSearch .Field.TimeRestriction {
+.oooTicketSearch .TimeRestrictionFilters .Row {
+    margin-top: 8px;
+}
+
+.oooTicketSearch .TimeRestrictionFilters .Field {
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 100%;
     flex-wrap: wrap;
-    height: unset;
-    min-height: 56px;
+    height: 30px;
 }
 
-.oooTicketSearch .Field.TimeRestriction > input {
+.oooTicketSearch .TimeRestrictionFilters .Field > input {
     width: fit-content;
     height: fit-content;
 }
 
-.oooTicketSearch .Field.TimeRestriction.NoLabel ~ label,
-.oooTicketSearch .Field.TimeRestriction.NoLabel label {
+.oooTicketSearch .TimeRestrictionFilters .Field.NoLabel ~ label,
+.oooTicketSearch .TimeRestrictionFilters .Field.NoLabel label {
     display: none;
 }
 
-.oooTicketSearch .FieldCell > .Field.TimeRestriction ~ label {
+.oooTicketSearch .TimeRestrictionFilters .FieldCell > .Field ~ label {
     position: absolute;
     left: 24px;
-    top: 28px; /* for hardcoded field height 56px */
+    top: 15px; /* for hardcoded field height 56px */
     margin-top: -0.5em;
     z-index: 1;
     font-size: 16px;
@@ -173,7 +176,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     color: var(--colTextDark);
 }
 
-.oooTicketSearch .Field.TimeRestriction p {
+.oooTicketSearch .TimeRestrictionFilters .Field p {
     font-size: 16px;
     color: #00023c;
     color: var(--colTextDark);
@@ -182,14 +185,21 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     padding-bottom: 0px;
 }
 
-.oooTicketSearch .Field.TimeRestriction > * {
+.oooTicketSearch .TimeRestrictionFilters .Field > * {
     padding-left: 8px;
     padding-right: 8px;
 }
 
-.oooTicketSearch .Field.TimeRestriction.NoLabel .oooDateContainer,
+.oooTicketSearch .TimeRestrictionFilters .Field.NoLabel .oooDateContainer,
 .oooTicketSearch .FieldCell .Field.oooCheckboxContainer {
     padding-left: 16px;
+}
+
+.oooTicketSearch .TimeRestrictionFilters .Field .oooDateContainer {
+    height: fit-content;
+    padding-top: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .oooTicketSearch .Field.oooCheckboxContainer input {
