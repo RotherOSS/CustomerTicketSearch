@@ -13,5 +13,6 @@
         <File Permission="660" Location="Kernel/Config/Files/XML/CustomerTicketSearch.xml" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.TicketSearch.css" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.Widget.css" />
+        <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/img/magnifying-glass-solid.svg" />
     </Filelist>
 </otobo_package>
