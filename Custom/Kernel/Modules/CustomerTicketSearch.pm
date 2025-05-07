@@ -1410,7 +1410,10 @@ sub Run {
                 %PageNav,
                 AccessKey      => $NewTicketAccessKey,
                 TicketListHTML => $TicketListHTML,
-                Fulltext       => $ParamObject->GetParam( Param => 'Body' ),
+# Rother OSS / CustomerTicketSearch
+#                 Fulltext       => $ParamObject->GetParam( Param => 'Body' ),
+                Fulltext       => $GetParam{MIMEBase_Body},
+# EO CustomerTicketSearch
             },
         );
 
