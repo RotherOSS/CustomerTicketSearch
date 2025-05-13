@@ -56,9 +56,9 @@
                         </div>
                     </fieldset>
                     <div class="Row ActionRow">
-                        <button name="SelectTemplate" type="submit" value="[% Translate("Select") | html %]">[% Translate("Select") | html %]</button>
-                        <button name="EraseTemplate" type="submit" value="[% Translate("Delete") | html %]">[% Translate("Delete") | html %]</button>
-                        <button name="SearchTemplate" type="submit" value="[% Translate("Search") | html %]">[% Translate("Search") | html %]</button>
+                        <button name="SelectTemplate" class="oooM" type="submit" value="[% Translate("Select") | html %]">[% Translate("Select") | html %]</button>
+                        <button name="EraseTemplate" class="oooM" type="submit" value="[% Translate("Delete") | html %]">[% Translate("Delete") | html %]</button>
+                        <button name="SearchTemplate" class="oooM" type="submit" value="[% Translate("Search") | html %]">[% Translate("Search") | html %]</button>
                     </div>
                 </form>
             </div>
@@ -250,7 +250,7 @@
                         </fieldset>
                     </div>
                     <div id="BottomActionRow" class="ActionRow Row">
-                        <button id="Submit" type="submit" value="[% Translate("Search") | html %]">[% Translate("Search") | html %]</button>
+                        <button id="Submit" class="oooM" type="submit" value="[% Translate("Search") | html %]">[% Translate("Search") | html %]</button>
                     </div>
                 </form>
             </div>
