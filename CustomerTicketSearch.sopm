@@ -6,7 +6,7 @@
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.io/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <Description Lang="en">..</Description>
+    <Description Lang="en">This package reenables and modernizes the search mask in the customer interface.</Description>
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/CustomerTicketSearch.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketSearch.tt" />
