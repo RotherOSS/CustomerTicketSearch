@@ -1251,7 +1251,7 @@ sub Run {
                         if ( $CurrentOrder && ( $CurrentOrder eq 'Up' ) ) {
 # Rother OSS / CustomerTicketSearch
 #                           $Order = 'Down';
-#                           $CSS .= ' SortAscending';                        
+#                           $CSS .= ' SortAscending';
                             $OrderBy = 'Down';
                             $CSS .= ' SortDescending';
 # EO CustomerTicketSearch

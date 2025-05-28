@@ -10,7 +10,7 @@
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/CustomerTicketSearch.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketSearch.tt" />
-		<File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketOverview.tt" />
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketOverview.tt" />
         <File Permission="660" Location="Custom/Kernel/System/DynamicField/Driver/BaseDateTime.pm" />
         <File Permission="660" Location="Custom/Kernel/System/DynamicField/Driver/Date.pm" />
         <File Permission="660" Location="Kernel/Config/Files/XML/CustomerTicketSearch.xml" />

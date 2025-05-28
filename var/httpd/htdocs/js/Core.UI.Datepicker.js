@@ -208,7 +208,7 @@ Core.UI.Datepicker = (function (TargetNS) {
                 } else {
                     Container = $Parent;
                     $DateDiv = Container.wrapInner("<div class='oooDate'></div>");
-                    
+
                     // reorder dynamic fields
                     Container.wrapInner("<div class='oooDate'></div>");
                     Container.addClass('oooDateContainer');
