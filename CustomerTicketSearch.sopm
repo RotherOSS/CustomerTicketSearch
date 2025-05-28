@@ -6,12 +6,15 @@
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.io/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <Description Lang="en">A more detailed ticket search for the Customer Interface. </Description>
+    <Description Lang="en">This package provides a more detailed Ticket search for the Customer Interface.</Description>
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/CustomerTicketSearch.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketSearch.tt" />
 		<File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketOverview.tt" />
+        <File Permission="660" Location="Custom/Kernel/System/DynamicField/Driver/BaseDateTime.pm" />
+        <File Permission="660" Location="Custom/Kernel/System/DynamicField/Driver/Date.pm" />
         <File Permission="660" Location="Kernel/Config/Files/XML/CustomerTicketSearch.xml" />
+        <File Permission="660" Location="var/httpd/htdocs/js/Core.UI.Datepicker.js" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.TicketSearch.css" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.Widget.css" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/img/magnifying-glass-solid.svg" />

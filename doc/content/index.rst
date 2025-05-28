@@ -27,10 +27,9 @@ Third-party software
 Usage
 =====
 After installing this package no further configuration is required. 
-There is now a Button 
-
-About
-=======
+There is now a Button in the Customer Interface Main Menu to access the detailed Ticket Search.
+It allows for searching with various different filters and provides the option to save and load specific filter combinations as Search Profiles for repeated use.
+For more advanced use cases, there is also the possibility to add Dynamic Fields to the Search Mask, e.g. by utilizing the Dynamic Field Screens feature of the Admin Interface. For more information on this, please refer to the `OTOBO Administration Manual <https://doc.otobo.org/>`.
 
 Contact
 -------
