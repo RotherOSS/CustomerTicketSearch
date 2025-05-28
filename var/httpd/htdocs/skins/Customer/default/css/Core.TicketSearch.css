@@ -39,13 +39,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
         border-bottom: 1.2px solid #e5e5eb;
     }
 
-    .Row_DynamicField {
-        width: 66%;
-        margin-left: 17%;
-        grid-row-gap: 16px;
-        grid-column-gap: 40px;
-    }
-
     .Row > input[type="text"] {
         width: calc( 66% - 32px ) !important;
         margin-left: 17%;
@@ -145,26 +138,32 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     margin-top: 8px;
 }
 
-.oooTicketSearch .TimeRestrictionFilters .Field {
+.oooTicketSearch .TimeRestrictionFilters .Field,
+.oooTicketSearch .Row .TimeRestrictionField {
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 100%;
     flex-wrap: wrap;
-    height: 30px;
+    height: max( 30px, fit-content );
 }
 
-.oooTicketSearch .TimeRestrictionFilters .Field > input {
+.oooTicketSearch .TimeRestrictionFilters .Field > input,
+.oooTicketSearch .TimeRestrictionField > input {
     width: fit-content;
     height: fit-content;
 }
 
 .oooTicketSearch .TimeRestrictionFilters .Field.NoLabel ~ label,
-.oooTicketSearch .TimeRestrictionFilters .Field.NoLabel label {
+.oooTicketSearch .TimeRestrictionFilters .Field.NoLabel label,
+.oooTicketSearch .TimeRestrictionField.NoLabel ~ label,
+.oooTicketSearch .TimeRestrictionField.NoLabel label,
+.oooTicketSearch .TimeRestrictionField ~ label[for*="TimePoint"] {
     display: none;
 }
 
-.oooTicketSearch .TimeRestrictionFilters .FieldCell > .Field ~ label {
+.oooTicketSearch .TimeRestrictionFilters .FieldCell > .Field ~ label,
+.oooTicketSearch .FieldCell > .TimeRestrictionField ~ label {
     position: absolute;
     left: 24px;
     top: 15px; /* for hardcoded field height 56px */
@@ -176,7 +175,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     color: var(--colTextDark);
 }
 
-.oooTicketSearch .TimeRestrictionFilters .Field p {
+.oooTicketSearch .TimeRestrictionFilters .Field p,
+.oooTicketSearch .TimeRestrictionField p {
     font-size: 16px;
     color: #00023c;
     color: var(--colTextDark);
@@ -185,17 +185,20 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     padding-bottom: 0px;
 }
 
-.oooTicketSearch .TimeRestrictionFilters .Field > * {
+.oooTicketSearch .TimeRestrictionFilters .Field > *,
+.oooTicketSearch .TimeRestrictionField > * {
     padding-left: 8px;
     padding-right: 8px;
 }
 
 .oooTicketSearch .TimeRestrictionFilters .Field.NoLabel .oooDateContainer,
+.oooTicketSearch .TimeRestrictionField.NoLabel .oooDateContainer,
 .oooTicketSearch .FieldCell .Field.oooCheckboxContainer {
     padding-left: 16px;
 }
 
-.oooTicketSearch .TimeRestrictionFilters .Field .oooDateContainer {
+.oooTicketSearch .TimeRestrictionFilters .Field .oooDateContainer,
+.oooTicketSearch .TimeRestrictionField .oooDateContainer {
     height: fit-content;
     padding-top: 0px;
     padding-left: 4px;

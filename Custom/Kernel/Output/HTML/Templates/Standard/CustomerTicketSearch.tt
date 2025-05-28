@@ -112,9 +112,13 @@
 [% RenderBlockEnd("SearchableArticleField") %]
 
 [% RenderBlockStart("DynamicField") %]
-                            <div class="Row">
+                            <div class="Row Row_DynamicField">
                                 <div class="FieldCell">
+    [% IF Data.IsTimeRestrictionField %]
+                                    <div class="Field TimeRestrictionField">
+    [% ELSE %]
                                     <div class="Field">
+    [% END %]
                                         [% Data.Field %]
                                     </div>
                                     [% Data.Label %]

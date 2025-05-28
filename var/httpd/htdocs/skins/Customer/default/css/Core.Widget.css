@@ -3,6 +3,8 @@
 Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 
+$origin: otobo - ce144e0387ead17c11fcc8ebc07ae003745f4ef9 - var/httpd/htdocs/js/Core.UI.Datepicker.js
+
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later version.
@@ -91,10 +93,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     margin-bottom: 24px;
 }
 
-/* Rother OSS / CustomerTicketSearch */
-/* .oooWidget > .oooSection i { */
 .oooWidget > .oooSection i {
-/* EO CustomerTicketSearch */
     position: relative;
     top: 1px;
     margin-right: 8px;
