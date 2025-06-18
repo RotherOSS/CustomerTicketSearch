@@ -14,6 +14,7 @@
         <File Permission="660" Location="Custom/Kernel/System/DynamicField/Driver/BaseDateTime.pm" />
         <File Permission="660" Location="Custom/Kernel/System/DynamicField/Driver/Date.pm" />
         <File Permission="660" Location="Kernel/Config/Files/XML/CustomerTicketSearch.xml" />
+        <File Permission="660" Location="var/httpd/htdocs/js/Core.Customer.Search.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/Core.UI.Datepicker.js" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.TicketSearch.css" />
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/Core.Widget.css" />
