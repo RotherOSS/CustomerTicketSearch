@@ -186,7 +186,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .oooTicketSearch .TimeRestrictionFilters .Field > *,
-.oooTicketSearch .TimeRestrictionField > * {
+.oooTicketSearch .Row:not(.Row_DynamicField) .TimeRestrictionField > * {
     padding-left: 8px;
     padding-right: 8px;
 }

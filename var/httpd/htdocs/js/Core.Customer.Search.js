@@ -59,21 +59,22 @@ Core.Customer.Search = (function (TargetNS) {
 
 // Rother OSS / CustomerTicketSearch
         var  $DateTimeDynamicFieldCheckboxes = $('.oooTicketSearchForm .Row_DynamicField .TimeRestrictionField input[type=checkbox]');
-        $DateTimeDynamicFieldCheckboxes.each( function(Index, Element) {
-            var $Field = $(this.closest('.Field'));
+        // add missing checkbox icons to time point fields
+        $DateTimeDynamicFieldCheckboxes.filter('input[name$=TimePoint]').each( function() {
+            var $Checkbox = $(this);
+            var $Field = $($Checkbox.closest('.Field'));
             $Field.addClass('oooCheckboxContainer');
-            var Icon = $("<i class='oooAltCheck ooofo'></i>").on('click', function() {
-                $(Element).click();
+            var $Icon = $("<i class='oooAltCheck ooofo'></i>").on('click', function() {
+                $Checkbox.click();
             });
-            $(this).after( Icon );
+            $Checkbox.after( $Icon );
         });
 
 
-        //submit event should be triggered before form submit
+        // remove unchecked date time dynamic field values from form submission
         $('.oooTicketSearchForm form').on('submit', function () {
             $DateTimeDynamicFieldCheckboxes.each( function() {
                 if (!this.checked) {
-                    // disabled input fields should not be submitted
                     $(this).siblings('input').prop('disabled', true);
                 }
             });
