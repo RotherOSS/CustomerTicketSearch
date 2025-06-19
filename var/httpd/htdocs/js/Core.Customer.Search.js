@@ -75,7 +75,7 @@ Core.Customer.Search = (function (TargetNS) {
         $('.oooTicketSearchForm form').on('submit', function () {
             $DateTimeDynamicFieldCheckboxes.each( function() {
                 if (!this.checked) {
-                    $(this).siblings('input').prop('disabled', true);
+                    $(this).parent().find('*').prop('disabled', true);
                 }
             });
         });

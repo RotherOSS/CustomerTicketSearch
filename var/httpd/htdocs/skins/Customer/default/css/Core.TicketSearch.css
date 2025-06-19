@@ -166,7 +166,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 .oooTicketSearch .FieldCell > .TimeRestrictionField ~ label {
     position: absolute;
     left: 24px;
-    top: 15px; /* for hardcoded field height 56px */
     margin-top: -0.5em;
     z-index: 1;
     font-size: 16px;
