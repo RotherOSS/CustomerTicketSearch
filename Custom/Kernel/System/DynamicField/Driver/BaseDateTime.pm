@@ -4,7 +4,7 @@
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 # Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - ce144e0387ead17c11fcc8ebc07ae003745f4ef9 - Kernel/System/DynamicField/Driver/BaseDateTime.pm
+# $origin: otobo - b6fad475889f2aafd079e68493c834f34f0fdf65 - Kernel/System/DynamicField/Driver/BaseDateTime.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -842,18 +842,23 @@ sub SearchFieldRender {
     my $FieldChecked = ( defined $Value->{$FieldName} && $Value->{$FieldName} == 1 ? 'checked' : '' );
 
 # Rother OSS / CustomerTicketSearch
+#     my $HTMLString = <<"EOF";
     my $HTMLString = '';
     if ($CustomerInterface == 1) {
         $HTMLString .= '<div class='. $FieldClass .'>';
     }
-# EO CustomerTicketSearch
 
     $HTMLString .= <<"EOF";
+# EO CustomerTicketSearch
+
     <input type="hidden" id="$FieldName" name="$FieldName" value="1">
 EOF
 
     if ( $Param{ConfirmationCheckboxes} ) {
+# Rother OSS / CustomerTicketSearch
+#         $HTMLString = <<"EOF";
         $HTMLString .= <<"EOF";
+# EO CustomerTicketSearch
     <input type="checkbox" id="$FieldName" name="$FieldName" value="1" $FieldChecked>
 EOF
     }

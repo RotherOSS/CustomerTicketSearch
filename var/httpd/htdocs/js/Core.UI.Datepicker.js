@@ -4,7 +4,7 @@
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 // Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 // --
-// $origin: otobo - ce144e0387ead17c11fcc8ebc07ae003745f4ef9 - var/httpd/htdocs/js/Core.UI.Datepicker.js
+// $origin: otobo - e44c18aea9abc125fddf9ceeed204db4fab290e0 - var/httpd/htdocs/js/Core.UI.Datepicker.js
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software

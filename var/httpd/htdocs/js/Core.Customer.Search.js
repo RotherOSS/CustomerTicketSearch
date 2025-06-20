@@ -4,6 +4,8 @@
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 // Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 // --
+// $origin: otobo - c4729719b9788da163909113055de495fac35df4 - var/httpd/htdocs/js/Core.Customer.Search.js
+// --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
 // Foundation, either version 3 of the License, or (at your option) any later version.
@@ -59,6 +61,7 @@ Core.Customer.Search = (function (TargetNS) {
 
 // Rother OSS / CustomerTicketSearch
         var  $DateTimeDynamicFieldCheckboxes = $('.oooTicketSearchForm .Row_DynamicField .TimeRestrictionField input[type=checkbox]');
+
         // add missing checkbox icons to time point fields
         $DateTimeDynamicFieldCheckboxes.filter('input[name$=TimePoint]').each( function() {
             var $Checkbox = $(this);
@@ -69,7 +72,6 @@ Core.Customer.Search = (function (TargetNS) {
             });
             $Checkbox.after( $Icon );
         });
-
 
         // remove unchecked date time dynamic field values from form submission
         $('.oooTicketSearchForm form').on('submit', function () {
