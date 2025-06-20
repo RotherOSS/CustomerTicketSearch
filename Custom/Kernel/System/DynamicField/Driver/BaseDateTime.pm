@@ -842,23 +842,18 @@ sub SearchFieldRender {
     my $FieldChecked = ( defined $Value->{$FieldName} && $Value->{$FieldName} == 1 ? 'checked' : '' );
 
 # Rother OSS / CustomerTicketSearch
-#     my $HTMLString = <<"EOF";
     my $HTMLString = '';
     if ($CustomerInterface == 1) {
         $HTMLString .= '<div class='. $FieldClass .'>';
     }
-
-    $HTMLString .= <<"EOF";
 # EO CustomerTicketSearch
 
+    $HTMLString .= <<"EOF";
     <input type="hidden" id="$FieldName" name="$FieldName" value="1">
 EOF
 
     if ( $Param{ConfirmationCheckboxes} ) {
-# Rother OSS / CustomerTicketSearch
-#         $HTMLString = <<"EOF";
         $HTMLString .= <<"EOF";
-# EO CustomerTicketSearch
     <input type="checkbox" id="$FieldName" name="$FieldName" value="1" $FieldChecked>
 EOF
     }
