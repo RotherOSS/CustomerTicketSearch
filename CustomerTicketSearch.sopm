@@ -6,7 +6,8 @@
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.io/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <Description Lang="en">This package provides a more detailed Ticket search for the Customer Interface.</Description>
+    <Description Lang="en">Provides more detailed ticket search for the customer interface.</Description>
+    <Description Lang="hu">Részletesebb jegykeresést biztosít az ügyfélfelülethez.</Description>
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/CustomerTicketSearch.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/CustomerTicketSearch.tt" />
