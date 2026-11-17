@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CustomerTicketSearch\n"
+"POT-Creation-Date: 2026-11-17 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Template: CustomerTicketSearch
+msgid "Search for a Ticket"
+msgstr ""
+
+#. SysConfig
+msgid "This configuration adds CustomerTicketSearch to the screens to enable or disable default columns for."
+msgstr ""
+
+#. SysConfig
+msgid "Ticket Search."
+msgstr ""
+

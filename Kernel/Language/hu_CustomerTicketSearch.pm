@@ -1,0 +1,91 @@
+# --
+# OTOBO is a web-based ticketing system for service organisations.
+# --
+# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# --
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+# --
+
+package Kernel::Language::hu_CustomerTicketSearch;
+
+use strict;
+use warnings;
+use utf8;
+
+sub Data {
+    my $Self = shift;
+
+    # Template: CustomerTicketSearch
+    $Self->{Translation}->{'Search for a Ticket'} = 'Jegy keresése';
+
+    # SysConfig
+    $Self->{Translation}->{'This configuration adds CustomerTicketSearch to the screens to enable or disable default columns for.'} =
+        'Ez a beállítás ügyféljegykeresést ad a képenyőkhöz az lapértelmezett oszlopok engedélyezéséhez vagy letiltásához.';
+    $Self->{Translation}->{'Ticket Search.'} = 'Jegykeresés.';
+
+
+    push @{ $Self->{JavaScriptStrings} // [] }, (
+    'Apr',
+    'April',
+    'Aug',
+    'August',
+    'Dec',
+    'December',
+    'Feb',
+    'February',
+    'Fr',
+    'Fri',
+    'Friday',
+    'Invalid date (need a future date)!',
+    'Invalid date (need a past date)!',
+    'Invalid date!',
+    'Jan',
+    'January',
+    'Jul',
+    'July',
+    'Jun',
+    'June',
+    'Mar',
+    'March',
+    'May',
+    'May_long',
+    'Mo',
+    'Mon',
+    'Monday',
+    'Next',
+    'Nov',
+    'November',
+    'Oct',
+    'October',
+    'Open date selection',
+    'Previous',
+    'Sa',
+    'Sat',
+    'Saturday',
+    'Sep',
+    'September',
+    'Su',
+    'Sun',
+    'Sunday',
+    'Th',
+    'Thu',
+    'Thursday',
+    'Tu',
+    'Tue',
+    'Tuesday',
+    'We',
+    'Wed',
+    'Wednesday',
+    );
+
+}
+
+1;
