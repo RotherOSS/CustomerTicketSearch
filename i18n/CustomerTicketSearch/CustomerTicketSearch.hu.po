@@ -1,0 +1,37 @@
+# Hungarian translations for CustomerTicketSearch.
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# This file is distributed under the same license as the CustomerTicketSearch package.
+#
+# Balázs Úr <balazs@urbalazs.hu>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: CustomerTicketSearch 11.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/RotherOSS/CustomerTicketSearch/"
+"issues\n"
+"POT-Creation-Date: 2026-11-17 12:53+0000\n"
+"PO-Revision-Date: 2026-11-17 13:57+0100\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian <https://translate.otobo.org/projects/otobo-11-0/"
+"addons/customerticketsearch/hu/>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 26.08.1\n"
+
+#. Template: CustomerTicketSearch
+msgid "Search for a Ticket"
+msgstr "Jegy keresése"
+
+#. SysConfig
+msgid ""
+"This configuration adds CustomerTicketSearch to the screens to enable or "
+"disable default columns for."
+msgstr ""
+"Ez a beállítás ügyféljegykeresést ad a képenyőkhöz az lapértelmezett "
+"oszlopok engedélyezéséhez vagy letiltásához."
+
+#. SysConfig
+msgid "Ticket Search."
+msgstr "Jegykeresés."
